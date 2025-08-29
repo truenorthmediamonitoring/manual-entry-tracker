@@ -51,8 +51,8 @@ export default function UserEntriesTable({ UserEntries }) {
                                     <th className="font-normal">Duration</th>
                                     <th className="font-normal">Language</th>
                                     <th className="font-normal">Program</th>
-                                    <th className="font-normal">Time Submitted</th>
-                                    <th className="font-normal">Date Submitted</th>
+                                    {/* <th className="font-normal">Time Submitted</th> */}
+                                    {/* <th className="font-normal">Date Submitted</th> */}
                                     <th  className="font-normal">User</th>
                                     <th className=" text-end">Actions</th>
                                 </tr>
@@ -79,8 +79,8 @@ export default function UserEntriesTable({ UserEntries }) {
                                         <td className="font-normal">{item.duration}</td>
                                         <td className="font-normal">{item.language}</td>
                                         <td className="font-normal">{item.program}</td>
-                                        <td className="font-normal">{item.timesubmitted}</td>
-                                        <td className="font-normal">{item.datesubmitted.slice(0,10)}</td>
+                                        {/* <td className="font-normal">{item.timesubmitted}</td> */}
+                                        {/* <td className="font-normal">{item.datesubmitted.slice(0,10)}</td> */}
                                         <td className="font-bold">{item.user}</td>
                                         <td className="font-bold">
 
