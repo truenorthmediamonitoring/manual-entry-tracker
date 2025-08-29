@@ -5,8 +5,8 @@ import SessionProvider from "./ui/SessionProvider";
 
 
 export const metadata = {
-  title: "TrueNorth Monitoring Tracker",
-  description: "Progress and accountability tracker for all end goals.",
+  title: "Manual Entry & Tracker",
+  description: "TrueNorth Media Monitoring Manual Entry & tracker.",
 };
 
 export default async function RootLayout({ children }) {
