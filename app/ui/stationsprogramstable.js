@@ -24,7 +24,7 @@ export default function StationsProgramsTable({ Stations, Programs }) {
 
     return (
         <>
-            <div className="overflow-scroll md:overflow-auto max-h-80 max-w-lg shadow-sm shadow-gray-300 rounded-xl flex-grow">
+            <div className="overflow-scroll md:overflow-auto max-h-96 max-w-lg shadow-sm shadow-gray-300 rounded-xl flex-grow">
                 {filteredProgram.length > 0 && (
                     <table className="table table-xs table-pin-rows bg-zinc-100">
                         <tbody className=" ">
