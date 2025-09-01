@@ -10,6 +10,10 @@ const ProgramSchema = new mongoose.Schema({
         type: [String],
         default: [],
     },
+    country: {
+        type: String,
+        required: true,
+    },
 });
 
 export default mongoose.models.Program || mongoose.model('Program', ProgramSchema);

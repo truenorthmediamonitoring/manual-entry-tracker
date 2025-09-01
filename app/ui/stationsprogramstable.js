@@ -19,13 +19,13 @@ export default function StationsProgramsTable({ Stations, Programs }) {
         Stations.map((sta) => [sta._id, sta.name])
     );
 
-    // const filteredProgram = Programs.filter(data => data.station === session.user.country)
+    const filteredProgram = Programs.filter(data => data.country === session.user.country)
 
 
     return (
         <>
             <div className="overflow-scroll md:overflow-auto max-h-80 max-w-lg shadow-sm shadow-gray-300 rounded-xl flex-grow">
-                {Programs.length > 0 && (
+                {filteredProgram.length > 0 && (
                     <table className="table table-xs table-pin-rows bg-zinc-100">
                         <tbody className=" ">
                             <tr className="text-cyan-950/50">
@@ -33,7 +33,7 @@ export default function StationsProgramsTable({ Stations, Programs }) {
                             </tr>
                         </tbody>
                         <tbody>
-                            {Programs.map((item) => {
+                            {filteredProgram.map((item) => {
                                 // Convert industry ObjectId to string for consistent matching
                                 const stationName = stationMap.get(item.station) || 'Unknown';
                                 return (

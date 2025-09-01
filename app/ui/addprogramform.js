@@ -5,6 +5,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { useSession } from "next-auth/react"
 import ToastAlert from "./toast"
+import Image from "next/image"
 
 export default function AddProgramForm({ Stations }) {
     const { data: session, update } = useSession({ required: "true" });
@@ -26,10 +27,12 @@ export default function AddProgramForm({ Stations }) {
 
         const stationId = event.target.stationId.value;
         const program = event.target.program.value;
+        const country = event.target.country.value;
 
         const data = {
             stationId,
             program,
+            country,
         }
 
         // console.log(data);
@@ -89,6 +92,42 @@ export default function AddProgramForm({ Stations }) {
                     <label className="input input-sm flex w-full md:max-w-2xl items-center gap-2 bg-zinc-100 rounded-md shadow-sm">
                         <input name="program" type="text" className="grow font-semibold text-black" placeholder="Program name" required />
                     </label>
+                </div>
+
+                {/* Country */}
+                <div className="flex justify-start items-center gap-2 mb-4">
+                    <select
+                        name="country"
+                        className="select select-sm w-full rounded-full shadow-sm bg-zinc-100 text-black font-semibold hidden"
+                        required defaultValue=""
+                    >
+                        <option className="text-xs" value={session.user.country}>{session.user.country}</option>
+                    </select>
+                    {session && (
+                        <>
+                            <Image
+                                className={`${session.user.country !== "Ghana" && "hidden"} rounded-sm`}
+                                src="https://flagcdn.com/w40/gh.png"
+                                width={20}
+                                height={20}
+                                alt="Ghana"
+                            />
+                            <Image
+                                className={`${session.user.country !== "Nigeria" && "hidden"} rounded-sm`}
+                                src="https://flagcdn.com/w40/ng.png"
+                                width={20}
+                                height={20}
+                                alt="Nigeria"
+                            />
+                            <Image
+                                className={`${session.user.country !== "Côte d'Ivoire" && "hidden"} rounded-sm`}
+                                src="https://flagcdn.com/w40/ci.png"
+                                width={20}
+                                height={20}
+                                alt="Côte d'Ivoire"
+                            />
+                        </>
+                    )}
                 </div>
 
                 <div className="flex justify-between items-center gap-3">

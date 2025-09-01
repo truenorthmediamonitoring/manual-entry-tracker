@@ -4,7 +4,7 @@ import Program from "@/app/lib/models/Program";
 export async function POST(request) {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    const { stationId, program } = await request.json();
+    const { stationId, program, country } = await request.json();
 
     try {
         console.log("Connecting to database...");
@@ -28,7 +28,7 @@ export async function POST(request) {
         }
 
         console.log("Creating new Program document and for given Station and adding Program...");
-        const newProgram = new Program({ station: stationId, programs: [program] });
+        const newProgram = new Program({ station: stationId, programs: [program], country });
         await newProgram.save();
         console.log("Document created, Program added...");
         return Response.json({ okay: "Program saved" }, { status: 200 });

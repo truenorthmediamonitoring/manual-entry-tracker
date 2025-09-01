@@ -104,7 +104,7 @@ export default function StationsTable({ Stations }) {
 
                                             <div className="flex justify-between items-center">
                                                 <kbd className="kbd kbd-xs bg-zinc-100 text-black">esc</kbd>
-                                                <DelStationForm id={item._id} />
+                                                <DelStationForm id={stationregion.id} />
                                             </div>
                                         </div>
                                     </dialog>
