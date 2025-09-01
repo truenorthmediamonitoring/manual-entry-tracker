@@ -38,7 +38,7 @@ export default async function Dashboard() {
                         </button>
                     </Link>
                     <h1 className=" text-3xl text-cyan-950 font-notosans font-bold leading-none">{session?.user.name}</h1>
-                    <p className="label-text text-cyan-950 text-sm">View all your enteries and check off day you&apos;re done with for the month.</p>
+                    <p className="label-text text-cyan-950 text-sm">See your entries and mark off completed days for your station(s) this month.</p>
                 </div>
                 <DataEntryModal User={session?.user.name} UserID={userID} Variants={Variants} />
             </div>

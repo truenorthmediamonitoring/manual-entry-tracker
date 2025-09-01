@@ -61,7 +61,7 @@ export default function UserDashboard({ UserID }) {
                             onChange={() => toggleDay(stationId, day)}
                             disabled={disabled}
                         />
-                        <span className="text-sm">{day}</span>
+                        <span className="text-sm font-normal">{day}</span>
                     </label>
                 ))}
             </div>
@@ -85,13 +85,13 @@ export default function UserDashboard({ UserID }) {
                 {/* )} */}
             </>
 
-            <div className="flex gap-4 mb-5 max-w-full">
+            <div className="flex flex-wrap gap-4 mb-5 max-w-full">
                 {stations.map(station => (
                     <>
                         {station.name !== "N/A" && (
                             <>
                                 <div key={station._id} className="p-6 rounded-3xl bg-cyan-50 shadow w-96">
-                                    <h2 className="text-lg font-semibold">{station.name} ({station.type})</h2>
+                                    <h2 className="text-lg font-semibold">{station.name}</h2>
                                     {renderDayCheckboxes(station._id)}
                                 </div>
                             </>
