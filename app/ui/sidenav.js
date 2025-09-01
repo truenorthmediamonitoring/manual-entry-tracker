@@ -200,7 +200,7 @@ export default function SideNavigation({ UserAccess, UserCountry }) {
                                     </div>
                                 )}
                                 <div className="font-bold text-md text-cyan-950 leading-none">{session.user.name}</div>
-                                <div className="font-semibold text-xs text-cyan-900 mb-0.5">{session.user.email}</div>
+                                <div className="font-semibold text-xs text-cyan-900 mb-0.5">{session.user.email.split("@")[0]}</div>
                                 <div style={{ fontSize: "10px" }} className="flex items-center gap-1 text-cyan-900">
                                     {/* <LocateFixed size={15} /> */}
                                     <Image
