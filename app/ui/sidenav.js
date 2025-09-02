@@ -50,8 +50,8 @@ export default function SideNavigation({ UserAccess, UserCountry }) {
         },
         {
             id: 5,
-            path: "/companies",
-            linkname: "Companies, Brands & Var.",
+            path: "/variants-generics-companies",
+            linkname: "Variants, Generics & Comp.",
             icon: Building,
         },
     ]
