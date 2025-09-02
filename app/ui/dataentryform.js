@@ -17,7 +17,6 @@ export default function DataEntryForm({ UserID, User, Variants }) {
 
     const filteredVariants = Variants.filter(data => data.country === session.user.country)
 
-
     const [saving, setsaving] = useState(false);
     const [entrysaved, setentrysaved] = useState(false)
     const [internalerror, setinternalerror] = useState(false);
@@ -447,8 +446,8 @@ export default function DataEntryForm({ UserID, User, Variants }) {
                                 </option>
                             ))}
                             {stationPrograms.length === 0 && (
-                                <option className="text-xs" value="N/A">
-                                    Not Available
+                                <option className="text-xs" value="ROS">
+                                    ROS (Default)
                                 </option>
                             )}
                         </select>
