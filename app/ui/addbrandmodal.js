@@ -24,7 +24,7 @@ export default function AddBrandModal({ Variants }) {
                 </form>
                 <div className="mb-5">
                     <h1 className="text-xl text-cyan-950 font-notosans font-bold leading-none">Add Brand Generic</h1>
-                    <span className="label-text text-xs text-zinc-800">Select a Company, enter a Brand and save.</span>
+                    <span className="label-text text-xs text-zinc-800">Select a Variant, enter the Brand Generic and save.</span>
                 </div>
                 <AddBrandForm Variants={Variants} />
             </div>
