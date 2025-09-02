@@ -474,7 +474,7 @@ export default function DataEntryForm({ UserID, User, Variants }) {
                             }}
                         >
                             <option className="text-xs" value="" disabled>Select Brand Variant </option>
-                            {filteredVariants.map((item) => (
+                            {filteredVariants.reverse().map((item) => (
                                 <option key={item._id} className="text-sm" value={item._id}>
                                     {item.variant}
                                 </option>

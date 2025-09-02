@@ -237,8 +237,8 @@ export default function SideNavigation({ UserAccess, UserCountry }) {
                             </div>
                         </div>
                         {UserAccess === "Admin" ?
-                            <ShieldUser size={15} className="text-green-900" />
-                            : <ShieldOff size={15} className=" text-amber-800" />}
+                                <ShieldUser size={15} className="text-green-900" />
+                                : <ShieldOff size={15} className=" text-amber-800" />}
                     </div>
                 )}
                 {/* User Id */}
