@@ -69,7 +69,6 @@ export default function AddBrandVariantForm() {
         }
     }
 
-
     return (
         <>
             <form onSubmit={handleFormSubmit}>

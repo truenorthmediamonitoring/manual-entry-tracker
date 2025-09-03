@@ -44,15 +44,15 @@ export default function SideNavigation({ UserAccess, UserCountry }) {
         },
         {
             id: 4,
-            path: "/industries-categories",
-            linkname: "Industries & Cate.",
-            icon: Factory,
-        },
-        {
-            id: 5,
             path: "/variants-generics-companies",
             linkname: "Variants, Generics & Comp.",
             icon: Building,
+        },
+        {
+            id: 5,
+            path: "/industries-categories",
+            linkname: "Industries & Cate.",
+            icon: Factory,
         },
     ]
 
@@ -169,7 +169,7 @@ export default function SideNavigation({ UserAccess, UserCountry }) {
 
                 {/* User Id */}
                 {session && (
-                    <div className="flex justify-between items-center gap-1.5 bg-cyan-50 text-black/40 px-2 py-4 rounded-lg shadow-sm transition-all mb-2 border border-zinc-100">
+                    <div className="flex justify-between items-center gap-1.5 bg-cyan-50 text-black/40 px-2 py-4 rounded-2xl shadow-sm transition-all mb-2 border border-zinc-100">
                         <div className="flex justify-start items-center gap-1.5">
                             <div className="flex flex-col">
                                 <IdCardLanyardIcon className=" text-cyan-950" size={25} />
@@ -237,8 +237,8 @@ export default function SideNavigation({ UserAccess, UserCountry }) {
                             </div>
                         </div>
                         {UserAccess === "Admin" ?
-                                <ShieldUser size={15} className="text-green-900" />
-                                : <ShieldOff size={15} className=" text-amber-800" />}
+                                <ShieldUser size={20} className="text-green-900" />
+                                : <ShieldOff size={20} className=" text-amber-800" />}
                     </div>
                 )}
                 {/* User Id */}

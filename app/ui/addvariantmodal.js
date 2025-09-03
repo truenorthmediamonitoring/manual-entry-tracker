@@ -3,7 +3,7 @@
 import { Plus, X } from "lucide-react";
 import AddBrandVariantForm from "./addvariantform";
 
-export default function AddBrandVariantModal({ Companies }) {
+export default function AddBrandVariantModal() {
     return (
         <>
             <button

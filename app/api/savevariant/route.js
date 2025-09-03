@@ -3,7 +3,7 @@ import Variant from "@/app/lib/models/Variant";
 
 
 export async function POST(request) {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const { variant, country } = await request.json();
 
