@@ -439,28 +439,24 @@ export default function DataEntryForm({ UserID, User, Variants }) {
                     <div className="label flex justify-start items-center gap-1">
                         <Asterisk size={15} className="text-red-700" />
                         <select name="program" className="select select-sm rounded-md shadow-sm bg-zinc-100 text-black font-semibold" required defaultValue="">
-<<<<<<< HEAD
                             <option className="text-xs" value="ROS">
                                 ROS (Default)
                             </option>
-=======
->>>>>>> 31010ff06a3c4bed4d51da2165ac65a643043482
+
                             <option className="text-xs" value="" disabled>Select program</option>
                             {stationPrograms.map((program, idx) => (
                                 <option key={idx} value={program}>
                                     {program}
                                 </option>
                             ))}
-<<<<<<< HEAD
+
                             {/* {stationPrograms.length === 0 && ( */}
                             {/* )} */}
-=======
                             {stationPrograms.length === 0 && (
                                 <option className="text-xs" value="ROS">
                                     ROS (Default)
                                 </option>
                             )}
->>>>>>> 31010ff06a3c4bed4d51da2165ac65a643043482
                         </select>
                     </div>
 
