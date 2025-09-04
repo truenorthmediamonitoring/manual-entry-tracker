@@ -23,10 +23,10 @@ export default async function Admin() {
     return (
         <>
             <div className="py-6 md:pt-24 px-4 md:px-10 h-screen rounded-lg bg-white/70 shadow-sm overflow-scroll">
-                {(useraccess !== "Admin" && useraccess !== "AdminReadOnly") && (
+                {useraccess !== "Admin" && (
                     <UnauthorizedAccess />
                 )}
-                {(useraccess === "Admin" && useraccess === "AdminReadOnly") && (
+                {useraccess === "Admin" && (
                     <>
                         <div className="flex flex-wrap justify-between items-center gap-2 mb-10">
                             <div className="">

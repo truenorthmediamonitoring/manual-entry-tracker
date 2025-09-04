@@ -9,10 +9,6 @@ export default function UnauthorizedAccess() {
                     <LockKeyhole size={30} className="text-red-950" />
                     <h1 className=" text-3xl text-cyan-950 font-notosans font-bold ">Unauthorized Access</h1>
                     <span className="label-text text-cyan-950">You do not have the clearance to access this page</span>
-                    <LockKeyhole size={30} className="text-red-700" />
-                    <h1 className=" text-3xl text-black font-notosans font-bold ">Unauthorized Access</h1>
-                    <span className="label-text text-black">You do not have the clearance to access this page</span>
-
                 </div>
                 <Link href="/dashboard">
                     <button
