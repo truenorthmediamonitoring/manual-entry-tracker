@@ -51,7 +51,7 @@ export default function SideNavigation({ UserAccess, UserCountry }) {
         {
             id: 5,
             path: "/industries-categories",
-            linkname: "Industries & Cate.",
+            linkname: "Industries & Categories",
             icon: Factory,
         },
     ]
