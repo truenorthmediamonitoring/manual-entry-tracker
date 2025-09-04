@@ -9,7 +9,7 @@ export default function UserProgressDashboard() {
     const { data: session, status, update } = useSession({ required: "true" });
 
     useEffect(async () => {
-        update(); // force refetch from /api/auth/session
+        await update(); // force refetch from /api/auth/session
     }, []);
 
 

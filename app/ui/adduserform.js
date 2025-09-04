@@ -146,7 +146,13 @@ export default function AddUserForm({ Stations }) {
                 >
                     <option className="text-xs" value="" disabled>Select Access</option>
                     {access.map((item) => (
-                        <option key={item.id} className="text-sm" value={item.role}>{item.role}</option>
+                        <option 
+                        key={item.id} 
+                        className="text-sm" 
+                        value={item.role === "Admin (Read Only)" ? "AdminReadOnly" : item.role}
+                        >
+                        {item.role}
+                        </option>
                     ))}
                 </select>
 

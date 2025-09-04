@@ -12,10 +12,9 @@ export default function UnauthorizedAccess() {
                 </div>
                 <Link href="/dashboard">
                     <button
-                        className="btn-ghost btn-xs rounded-full flex justify-start items-center gap-1 shadow-sm transition-all bg-cyan-900 text-black mb-5 px-1.5 py-1 cursor-pointer hover:bg-cyan-950">
-
+                        className="btn-ghost btn-xs rounded-full flex justify-start items-center gap-1 shadow-sm transition-all bg-cyan-900  text-cyan-50 mb-5 py-1.5 px-2 cursor-pointer hover:bg-cyan-950">
                         <LayoutDashboard size={15} />
-                        <span className="text-xs">Go to Dashboard</span>
+                        <span className="text-xs font-semibold text-cyan-50">Go to Dashboard</span>
                     </button>
                 </Link>
             </div>

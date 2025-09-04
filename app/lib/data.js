@@ -1,6 +1,7 @@
 export const access = [
     { id: 0, role: "Admin" },
-    { id: 1, role: "User" },
+    { id: 1, role: "Admin (Read Only)" },
+    { id: 2, role: "User" },
 ]
 
 export const stationtype = [
