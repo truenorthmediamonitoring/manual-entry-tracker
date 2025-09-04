@@ -26,7 +26,7 @@ export default async function Admin() {
                 {(useraccess !== "Admin" && useraccess !== "AdminReadOnly") && (
                     <UnauthorizedAccess />
                 )}
-                {useraccess === "Admin" && (
+                {(useraccess === "Admin" && useraccess === "AdminReadOnly") && (
                     <>
                         <div className="flex flex-wrap justify-between items-center gap-2 mb-10">
                             <div className="">
